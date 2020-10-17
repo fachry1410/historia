@@ -157,7 +157,7 @@
                         <a href="<?php echo site_url();?>">
                             <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
                         </a>
-                        <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
+                        <p><?php echo date('Y');?> © copyright by M Fikri</a>. <br>All rights reserved.</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -179,7 +179,6 @@
                               <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
                               <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
                               <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                              <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
                               <li><a href="<?php echo site_url('download');?>">Download</a></li>
                           </ul>
                       </div>

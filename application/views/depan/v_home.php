@@ -199,27 +199,6 @@
                 <?php endforeach;?>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-md-12">
-                      <?php foreach ($agenda->result() as $row):?>
-                        <div class="event_date">
-                            <div class="event-date-wrap">
-                                <p><?php echo date("d", strtotime($row->agenda_tanggal));?></p>
-                                <span><?php echo date("M. y", strtotime($row->agenda_tanggal));?></span>
-                            </div>
-                        </div>
-                        <div class="date-description">
-                            <h3><a href="<?php echo site_url('agenda');?>"><?php echo $row->agenda_nama;?></a></h3>
-                            <p><?php echo limit_words($row->agenda_deskripsi,10).'...';?></p>
-                            <hr class="event_line">
-                        </div>
-                        <?php endforeach;?>
-
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 </section>
@@ -253,14 +232,6 @@
                 <div class="chart-text">
                     <p><span class="counter"><?php echo $tot_files;?></span> Download
                     </p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="chart-img">
-                    <img src="<?php echo base_url().'theme/images/chart-icon_4.png'?>" class="img-fluid" alt="chart_icon">
-                </div>
-                <div class="chart-text">
-                    <p><span class="counter"><?php echo $tot_agenda;?></span> Agenda</p>
                 </div>
             </div>
         </div>

@@ -53,20 +53,6 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-newspaper-o"></i>
-            <span>Berita</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/tulisan'?>"><i class="fa fa-list"></i> List Berita</a></li>
-            <li><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
-            <li><a href="<?php echo base_url().'admin/kategori'?>"><i class="fa fa-wrench"></i> Kategori</a></li>
-          </ul>
-        </li>
         <li>
           <a href="<?php echo base_url().'admin/pengguna'?>">
             <i class="fa fa-users"></i> <span>Pengguna</span>
@@ -134,15 +120,6 @@
             <i class="fa fa-envelope"></i> <span>Inbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green"><?php echo $jum_pesan;?></small>
-            </span>
-          </a>
-        </li>
-
-        <li>
-          <a href="<?php echo base_url().'admin/komentar'?>">
-            <i class="fa fa-comments"></i> <span>Komentar</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green"><?php echo $jum_comment;?></small>
             </span>
           </a>
         </li>

@@ -63,15 +63,6 @@
                                   <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('guru');?>">Guru</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('siswa');?>">Siswa</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
-                              </li>
-                              <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
                               </li>
                               <li class="nav-item">

@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="blog-tiltle_block">
-                        <h4><a href="<?php echo site_url('artikel/'.$row->tulisan_slug);?>"><?php echo $row->tulisan_judul;?></a></h4>
+                        <h4><a href="<?php echo site_url('blog/'.$row->tulisan_slug);?>"><?php echo $row->tulisan_judul;?></a></h4>
                         <h6> <a href="#"><i class="fa fa-user" aria-hidden="true"></i><span><?php echo $row->tulisan_author;?></span> </a>  |   <a href="#"><i class="fa fa-tags" aria-hidden="true"></i><span><?php echo $row->tulisan_kategori_nama;?></span></a></h6>
                         <?php echo limit_words($row->tulisan_isi,10).'...';?>
                         <div class="blog-icons">
@@ -139,55 +139,55 @@
 <!--//END BLOG -->
 <!--============================= FOOTER =============================-->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="foot-logo">
-                    <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
-                    </a>
-                    <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
-                    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="foot-logo">
+                <a href="<?php echo site_url();?>">
+                    <img src="<?php echo base_url().'theme/images/logo.png'?>" class="img-fluid" alt="footer_logo">
+                </a>
+                <p><?php echo date('Y');?> © copyright by Developer Tim 4</a>. <br>All rights reserved.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="sitemap">
-                        <h3>Menu Utama</h3>
-                        <ul>
-                            <li><a href="<?php echo site_url();?>">Home</a></li>
-                            <li><a href="<?php echo site_url('about');?>">About</a></li>
-                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+            </div>
+            <div class="col-md-3">
+                <div class="sitemap">
+                    <h3>Menu Utama</h3>
+                    <ul>
+                        <li><a href="<?php echo site_url();?>">Home</a></li>
+                        <li><a href="<?php echo site_url('about');?>">About</a></li>
+                        <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
+                        <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
+                        <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="sitemap">
+                  <h3>Akademik</h3>
+                  <ul>
+                      <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
+                      <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
+                      <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
+                      <li><a href="<?php echo site_url('download');?>">Download</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="address">
+                    <h3>Hubungi Kami</h3>
+                    <p><span>Alamat: </span> Malang, Jawa Timur, INA. 65141</p>
+                    <p>Email : info@historia.com
+                        <br> Phone : +62 82292902376</p>
+                        <ul class="footer-social-icons">
+                            <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="sitemap">
-                      <h3>Akademik</h3>
-                      <ul>
-                          <li><a href="<?php echo site_url('guru');?>">Guru</a></li>
-                          <li><a href="<?php echo site_url('siswa');?>">Siswa </a></li>
-                          <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                      </ul>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="address">
-                        <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Padang, Sumatera Barat, INA. 11001</p>
-                        <p>Email : info@mschool.com
-                            <br> Phone : +91 555 668 986</p>
-                            <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
         <!--//END FOOTER -->
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>

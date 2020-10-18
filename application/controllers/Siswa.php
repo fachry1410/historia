@@ -7,6 +7,7 @@ class Siswa extends CI_Controller{
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
+		$x['title'] = 'Siswa';	
 		$jum=$this->m_siswa->siswa();
         $page=$this->uri->segment(3);
         if(!$page):
@@ -41,7 +42,9 @@ class Siswa extends CI_Controller{
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_siswa->siswa_perpage($offset,$limit);
+						$this->load->view('template/header',$x);
 						$this->load->view('depan/v_siswa',$x);
+						$this->load->view('template/footer',$x);
 	}
 
 

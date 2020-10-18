@@ -7,7 +7,10 @@ class Contact extends CI_Controller{
   		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
-		  $this->load->view('depan/v_contact');
+      $x['title'] = 'Contact';
+		  $this->load->view('template/header',$x);
+      $this->load->view('depan/v_contact');
+		  $this->load->view('template/footer');
 	}
 
   function kirim_pesan(){

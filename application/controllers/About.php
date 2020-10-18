@@ -6,9 +6,12 @@ class About extends CI_Controller{
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
+        $x['title'] = 'About';
 		$x['tot_guru']=$this->db->get('tbl_guru')->num_rows();
 		$x['tot_siswa']=$this->db->get('tbl_siswa')->num_rows();
 		$x['tot_files']=$this->db->get('tbl_files')->num_rows();
+		$this->load->view('template/header',$x);
 		$this->load->view('depan/v_about',$x);
+		$this->load->view('template/footer',$x);
 	}
 }

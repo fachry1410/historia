@@ -41,7 +41,11 @@ class Pengumuman extends CI_Controller{
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_pengumuman->pengumuman_perpage($offset,$limit);
+						$x['title'] = 'Pengumuman';
+						$this->load->view('template/header',$x);
 						$this->load->view('depan/v_pengumuman',$x);
+						$this->load->view('template/footer',$x);
+
 	}
 
 }

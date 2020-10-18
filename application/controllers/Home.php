@@ -10,12 +10,16 @@ class Home extends CI_Controller{
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
+			$x['title'] = 'Home';	
 			$x['berita']=$this->m_tulisan->get_berita_home();
 			$x['pengumuman']=$this->m_pengumuman->get_pengumuman_home();
 			$x['tot_guru']=$this->db->get('tbl_guru')->num_rows();
 			$x['tot_siswa']=$this->db->get('tbl_siswa')->num_rows();
 			$x['tot_files']=$this->db->get('tbl_files')->num_rows();
+			$this->load->view('template/header',$x);
 			$this->load->view('depan/v_home',$x);
+			$this->load->view('template/footer',$x);
+
 	}
 
 }

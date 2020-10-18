@@ -7,6 +7,7 @@ class Guru extends CI_Controller{
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
+		$x['title'] = 'Guru';
 		$jum=$this->m_guru->guru();
         $page=$this->uri->segment(3);
         if(!$page):
@@ -42,7 +43,8 @@ class Guru extends CI_Controller{
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_guru->guru_perpage($offset,$limit);
+						$this->load->view('template/header',$x);
 						$this->load->view('depan/v_guru',$x);
+						$this->load->view('template/footer',$x);
 	}
-
 }

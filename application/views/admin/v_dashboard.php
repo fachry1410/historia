@@ -34,7 +34,6 @@
             $value[] = (float) $result->jumlah; //ambil nilai
         }
         /* end mengambil query*/
-
     ?>
 
 </head>
@@ -296,38 +295,7 @@
 
       <!-- Main row -->
       <div class="row">
-        <!-- Left col -->
-        <div class="col-md-8">
-          <!-- MAP & BOX PANE -->
-          <div class="box box-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Posting Populer</h3>
-
-              <table class="table">
-              <?php
-                  $query=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC");
-                  foreach ($query->result_array() as $i) :
-                      $tulisan_id=$i['tulisan_id'];
-                      $tulisan_judul=$i['tulisan_judul'];
-                      $tulisan_views=$i['tulisan_views'];
-              ?>
-                  <tr>
-                    <td><?php echo $tulisan_judul;?></td>
-                    <td><?php echo $tulisan_views.' Views';?></td>
-                  </tr>
-              <?php endforeach;?>
-              </table>
-            </div>
-
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-
-        <div class="col-md-4">
+        <div class="col-md-12">
           <!-- Info Boxes Style 2 -->
           <div class="info-box bg-yellow">
             <span class="info-box-icon"><i class="fa fa-safari"></i></span>
